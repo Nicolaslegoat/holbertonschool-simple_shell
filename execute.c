@@ -19,7 +19,7 @@ void execute(char **args)
 
 	if ((access(args[0], X_OK)) != 0)
 	{
-		printf("./shell: no such file or directory\n");
+		perror("./shell: no such file or directory\n");
 		return;
 	}
 

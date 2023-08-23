@@ -18,9 +18,11 @@ void split_string(char *str)
 
 	while (token != NULL)
 	{
-
-		ar[index] = token;
-		index++;
+		if(strlen(token) > 0)
+		{
+			ar[index] = token;
+			index++;
+		}
 		token = strtok(NULL, " ");
 	}
 	execute(ar);

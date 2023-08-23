@@ -19,7 +19,6 @@ void execute(char **args)
 
 	if ((access(args[0], X_OK)) != 0)
 	{
-		perror("./shell: no such file or directory\n");
 		return;
 	}
 

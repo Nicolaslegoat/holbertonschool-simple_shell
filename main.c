@@ -18,6 +18,7 @@ int main(void)
 		if (isatty(STDIN_FILENO))
 		{
 			printf("$ ");
+			fflush(STDIN_FILENO);
 		}
 
 		chars_read = getline(&input, &size, stdin);

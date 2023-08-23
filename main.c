@@ -15,7 +15,10 @@ int main(void)
 
 	while (1)
 	{
-		printf("$ ");
+		if (isatty(STDIN_FILENO))
+		{
+			printf("$ ");
+		}
 
 		chars_read = getline(&input, &size, stdin);
 		input[strlen(input) - 1] = '\0';

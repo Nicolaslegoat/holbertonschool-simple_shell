@@ -25,5 +25,9 @@ void split_string(char *str)
 		}
 		token = strtok(NULL, " ");
 	}
+	if (index == 0)
+	{
+		return;
+	}
 	execute(ar);
 }

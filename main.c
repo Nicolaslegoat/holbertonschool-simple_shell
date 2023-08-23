@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * main - a program
+ * similar to a shell
+ * Return: always 0 (Success)
+ */
 
 int main(void)
 {
@@ -18,7 +23,7 @@ int main(void)
 		if (chars_read == EOF)
 		{
 			free(input);
-			return(0);
+			return (0);
 		}
 		if (chars_read == -1)
 			continue;

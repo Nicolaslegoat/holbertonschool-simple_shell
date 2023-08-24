@@ -33,7 +33,8 @@ Your shell will be compiled this way:
 * execute.c - It executes the command converted into an array of strings provided by the user.
 
 ## Authors
-Jeremy Macal
-Eric Marecq
-Nicolas Mancino
-Saadi Khemchane
+> [!NOTE]
+> * Jeremy Macal
+> * Eric Marecq
+> * Nicolas Mancino
+> * Saadi Khemchane

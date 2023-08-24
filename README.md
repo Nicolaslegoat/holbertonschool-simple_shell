@@ -33,7 +33,7 @@ Your shell will be compiled this way:
 * execute.c - It executes the command converted into an array of strings provided by the user.
 
 ## Authors
-> [!GROUP]
+> [!NOTE]
 > * Jeremy Macal
 > * Eric Marescq
 > * Nicolas Mancino

@@ -1,5 +1,5 @@
 # 0x16. C - Simple Shell
-Project to be done in teams of 3 people (your team:Jeremy Macal, Eric Maresq, Nicolas Mancino)
+Project to be done in teams of 3 people (your team:Jeremy Macal, Eric Marescq, Nicolas Mancino)
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
@@ -33,8 +33,8 @@ Your shell will be compiled this way:
 * execute.c - It executes the command converted into an array of strings provided by the user.
 
 ## Authors
-> [!NOTE]
+> [!GROUP]
 > * Jeremy Macal
-> * Eric Marecq
+> * Eric Marescq
 > * Nicolas Mancino
 > * Saadi Khemchane

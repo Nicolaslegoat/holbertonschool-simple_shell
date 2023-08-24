@@ -7,6 +7,10 @@
 #include <unistd.h>
 
 void execute(char **args);
+
 void split_string(char *str);
 
+extern char **environ;
+char *split_path(char *cmd);
+char *_getenv(char *way);
 #endif

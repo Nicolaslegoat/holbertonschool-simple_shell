@@ -34,5 +34,10 @@ void split_string(char *str)
 	{
 		return;
 	}
+	if (strcmp(*ar, "exit") == 0 && ar[1] == NULL)
+	{ 
+		free(str);
+		exit(0);
+	}
 	execute(ar);
 }

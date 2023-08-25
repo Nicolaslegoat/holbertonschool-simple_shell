@@ -19,13 +19,9 @@ void execute(char **args)
 	int statut;
 	char *cmdWithPath;
 
-	/*
-	if ((access(args[0], X_OK)) != 0)
-	{
-		return;
-	}
-*/
 	pid = fork();
+
+
 	if (pid == -1)
 	{
 		perror("error");

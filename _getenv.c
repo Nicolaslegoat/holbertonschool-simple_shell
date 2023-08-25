@@ -61,7 +61,7 @@ char *split_path(char *cmd)
 		}
 		if (access(result, F_OK) == -1)
 		{
-			fprintf(stderr "./hsh: 1: %s not found", cmd);
+			fprintf(stderr, "./hsh: 1: %s not found", cmd);
 		}
 		free(result);
 		token = strtok(NULL, ":");

@@ -1,4 +1,5 @@
 #include "main.h"
+void _print_env(void);
 
 /**
  * split_string - use strtk

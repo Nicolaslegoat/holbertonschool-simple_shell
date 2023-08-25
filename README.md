@@ -31,6 +31,9 @@ Your shell will be compiled this way:
 * main.c - It retrieves the command provided by the user as a string of characters and provides a program termination condition.
 * split_string.c - It is used to split the string of characters, and once done, it calls the execute function.
 * execute.c - It executes the command converted into an array of strings provided by the user.
+* _getenv.c - He navigates the environment and retrieves the requested variable.
+* split_path.c - This function is used to search for a specified executable file by its command name within directories listed in the "PATH" environment variable, and it returns the full path if the file is found, otherwise it returns NULL.
+![flowchart simple shell drawio](https://github.com/Nicolaslegoat/holbertonschool-simple_shell/assets/130404454/7246f83e-0a02-4881-82a3-beae6bc6a0b8)
 
 ## Authors
 > [!NOTE]

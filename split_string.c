@@ -39,5 +39,9 @@ void split_string(char *str)
 		free(str);
 		exit(0);
 	}
+	if (strcmp(*ar, "env") == 0 && ar[1] == NULL)
+	{
+		_print_env();
+	}
 	execute(ar);
 }

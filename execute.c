@@ -19,6 +19,12 @@ void execute(char **args)
 	int statut;
 	char *cmdWithPath;
 
+	/*
+	if ((access(args[0], X_OK)) != 0)
+	{
+		return;
+	}
+*/
 	pid = fork();
 	if (pid == -1)
 	{
@@ -30,12 +36,10 @@ void execute(char **args)
 		cmdWithPath = split_path(args[0]);
 		if (cmdWithPath != NULL)
 		{
-			free(args[0]);
 			args[0] = cmdWithPath;
 		}
 		if ((execve(args[0], args, NULL)) == -1)
 		{
-			free(args[0]);
 			exit(EXIT_FAILURE);
 		}
 	}

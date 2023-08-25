@@ -34,7 +34,10 @@ void execute(char **args)
 			args[0] = cmdWithPath;
 		}
 		if ((execve(args[0], args, NULL)) == -1)
+		{
+			free(args[0]);
 			exit(EXIT_FAILURE);
+		}
 	}
 	else
 	{

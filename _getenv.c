@@ -41,6 +41,8 @@ char *split_path(char *cmd)
 	char way[] = "PATH";
 	int path_len = 0;
 
+	if (cmd == NULL)
+		return (NULL);
 	path = _getenv(way);
 
 	token = strtok(path, ":");
@@ -57,8 +59,9 @@ char *split_path(char *cmd)
 		{
 			return (result);
 		}
+		free(result);
 		token = strtok(NULL, ":");
 	}
-
+	fprintf(stderr, "./hsh: 1: %s not found\n", cmd);
 	return (NULL);
 }

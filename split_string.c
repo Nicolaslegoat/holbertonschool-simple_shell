@@ -14,17 +14,22 @@ void split_string(char *str)
 	int index = 0;
 	char *ar[4096] = { NULL }, *token = NULL;
 
-	token = strtok(str, " ");
+	if (str == NULL)
+		return;
+
+	token = strtok(str, " \t\n");
 
 	while (token != NULL)
 	{
-		if(strlen(token) > 0)
+		if(token && strlen(token) > 0)
 		{
 			ar[index] = token;
 			index++;
 		}
-		token = strtok(NULL, " ");
+		token = strtok(NULL, " \t\n");
 	}
+
+
 	if (index == 0)
 	{
 		return;

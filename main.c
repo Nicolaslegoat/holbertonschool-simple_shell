@@ -18,11 +18,10 @@ int main(void)
 		if (isatty(STDIN_FILENO))
 		{
 			printf("$ ");
-			fflush(STDIN_FILENO);
+			fflush(stdout);
 		}
 
 		chars_read = getline(&input, &size, stdin);
-		input[strlen(input) - 1] = '\0';
 
 		if (chars_read == EOF)
 		{

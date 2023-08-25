@@ -21,7 +21,7 @@ void split_string(char *str)
 
 	while (token != NULL)
 	{
-		if(token && strlen(token) > 0)
+		if (token && strlen(token) > 0)
 		{
 			ar[index] = token;
 			index++;

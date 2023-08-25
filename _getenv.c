@@ -59,9 +59,12 @@ char *split_path(char *cmd)
 		{
 			return (result);
 		}
+		if (access(result, F_OK) == -1)
+		{
+			fprintf(stderr "./hsh: 1: %s not found", cmd);
+		}
 		free(result);
 		token = strtok(NULL, ":");
 	}
-	fprintf(stderr, "./hsh: 1: %s not found\n", cmd);
 	return (NULL);
 }

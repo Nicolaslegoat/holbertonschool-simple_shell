@@ -31,6 +31,7 @@ Your shell will be compiled this way:
 * main.c - It retrieves the command provided by the user as a string of characters and provides a program termination condition.
 * split_string.c - It is used to split the string of characters, and once done, it calls the execute function.
 * execute.c - It executes the command converted into an array of strings provided by the user.
+![flowchart simple shell drawio](https://github.com/Nicolaslegoat/holbertonschool-simple_shell/assets/130404454/7246f83e-0a02-4881-82a3-beae6bc6a0b8)
 
 ## Authors
 > [!NOTE]
